@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ProductSharedService} from "../services/product.sharedService";
+import {product} from "../Models/product";
+import {largeImageHostUrl} from "../constants";
 
 @Component({
   selector: 'app-productspec',
@@ -11,11 +13,11 @@ import {ProductSharedService} from "../services/product.sharedService";
 })
 export class ProductspecComponent implements OnInit {
 
-  product;
+  product:product;
   constructor(productSharedService:ProductSharedService) {
-    let hostUrl = "http://img1.craftsvilla.com/orig";
+
     this.product = productSharedService.product;
-    this.product.largeImageUrl = hostUrl+this.product.imgUrl;
+    this.product.largeImageUrl = largeImageHostUrl+this.product.imgUrl;
   }
 
   ngOnInit() {

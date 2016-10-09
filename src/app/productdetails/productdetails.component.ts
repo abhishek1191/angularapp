@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {ProductSharedService} from "../services/product.sharedService";
+import {product} from "../Models/product";
 
 @Component({
   selector: 'app-productdetails',
@@ -14,7 +15,7 @@ export class ProductdetailsComponent implements OnInit {
   ngOnInit() {
   }
 
-   @Input() product ;
+   @Input() product:product ;
 
   setProduct(){
     this.productSharedService.product = this.product;
