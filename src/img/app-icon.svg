@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" height="32px" width="17px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 32"><!-- Generator: sketchtool 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+ <title>app_icon</title>
+ <desc>Created with sketchtool.</desc>
+ <g id="Page-1" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+  <g id="icons" transform="translate(-488 -169)" fill="#4C4C4C" sketch:type="MSArtboardGroup">
+   <g id="app_icon" transform="translate(488 169)" sketch:type="MSLayerGroup">
+    <g id="Group" sketch:type="MSShapeGroup">
+     <path id="Shape" d="m12.942 0.16c-1.235-0.16213-4.3379-0.16-4.3379-0.16l-0.2171-7.9395e-15s-3.1054-0.0021333-4.3393 0.16c-2.1569 0.28729-3.8059 0.25351-3.8059 4.3342l0.00004 24.119c0 2.044 1.7575 3.387 4.0728 3.387h4.0728 0.2171 4.0725c2.314 0 4.07-1.343 4.07-3.387v-24.119c0-4.0801-1.645-4.0467-3.805-4.334zm2.526 27.575h-14.09v-24.15l14.09-0.0003v24.15z"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
