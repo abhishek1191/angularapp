@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
 import {ProductService} from '../services/products.service';
+import {ProductSharedService} from '../services/product.sharedService';
 
 @Component({
   selector: 'app-productlist',
@@ -30,7 +31,7 @@ export class ProductlistComponent implements OnInit {
 
     this.productService.getProducts().subscribe(
       products => this.productList = products.products.map((product)=> {
-        product.imgUrl = hostUrl + product.imgUrl;
+        product.mediumImageUrl = hostUrl + product.imgUrl;
         return product;
       }), //Bind to view
       err => {

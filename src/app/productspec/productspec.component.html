@@ -1817,7 +1817,7 @@
           <div class="big-image">
 
             <div id="big1" data-class="gallery_1" class="big-zoom pinch-zoom">
-              <img itemprop="image" src="http://img1.craftsvilla.com/orig/C/V/CV-24229-MESHO60541230140--eshop99-1469864122-Craftsvilla_1.jpg" alt="" data-orginal="http://img1.craftsvilla.com/orig/C/V/CV-MSHON66953901030--Shonayaa-Craftsvilla_1.jpg">
+              <img itemprop="image" [src]="product.largeImageUrl" alt="" data-orginal="http://img1.craftsvilla.com/orig/C/V/CV-MSHON66953901030--Shonayaa-Craftsvilla_1.jpg">
             </div>
 
             <div id="big2" data-class="gallery_2" class="big-zoom pinch-zoom" style="display:none">
@@ -2034,13 +2034,13 @@
           <!-- Social Media Icons ends here -->
           <!-- Social Media Icons ends here -->
           <h1 class="product-title col-xs-11 nopadding" itemprop="name">
-            Yellow And Blue Georgette And Chiffon Saree
+            {{product.productName}}
           </h1>
           <p class="col-xs-8 col-sm-8 col-md-12 nopadding vendor_container">
             Sold by : <span class="bluen">
 									<span class="text-uppercase ">
 										<a href="http://www.craftsvilla.com/Shonayaa">
-											<span itemprop="brand">Shonayaa</span>
+											<span itemprop="brand"> {{product.vendorDetails.vendorName}}</span>
 										</a>
 									</span>
 								</span>
@@ -2072,16 +2072,16 @@
 
             <div class="grayn">
               <i class="fa fa-rupee"></i>
-              <s>4999</s>
+              <s>{{product.regularPrice}}</s>
             </div>
             <meta itemprop="priceCurrency" content="INR">
             <div class="col-xs-4 col-sm-4 col-md-3 nomargin nopadding price_details">
               <i class="fa fa-rupee"></i>
-              <span itemprop="price">1649</span>
+              <span itemprop="price">{{product.discountedPrice}}</span>
             </div>
             <div class="col-xs-8 col-sm-8 col-md-6">
               <div class="text-uppercase saved-percent text-center">
-                you save 67 %
+                you save {{product.discountPercentage}} %
               </div>
             </div>
 

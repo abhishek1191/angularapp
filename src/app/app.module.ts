@@ -13,6 +13,7 @@ import {routing} from './app.routes';
 
 import {ProductService} from './services/products.service';
 import { ProductspecComponent } from './productspec/productspec.component';
+import {ProductSharedService} from "./services/product.sharedService";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { ProductspecComponent } from './productspec/productspec.component';
     JsonpModule,
     routing
   ],
-  providers: [ProductService],
+  providers: [ProductService,ProductSharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
