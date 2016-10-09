@@ -9,6 +9,7 @@ import {MainContainer} from './containers/main.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import {JsonpModule} from '@angular/http';
+import {routing} from './app.routes';
 
 import {ProductService} from './services/products.service';
 import { ProductspecComponent } from './productspec/productspec.component';
@@ -21,13 +22,13 @@ import { ProductspecComponent } from './productspec/productspec.component';
     ProductlistComponent,
     ProductdetailsComponent,
     ProductspecComponent
-
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    JsonpModule
+    JsonpModule,
+    routing
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

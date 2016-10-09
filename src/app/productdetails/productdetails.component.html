@@ -4,7 +4,7 @@
 </a></div>
   <div class="product-details-container col-xs-12">
     <div class="product-name product-name-ellipsis">
-      <a title="Yellow and blue georgette and chiffon saree" href="http://www.craftsvilla.com/catalog/product/view/id/3566887/s/shonaya-blue-yellow-designer-georgette-embroidery-work-saree-with-blouse-piece">
+      <a [title]="product.productName" [routerLink]="['/product-details']">
         {{product.productName}}
       </a>
     </div>					<div class="price-container col-xs-12 nopadding"><div class="col-xs-6 col-md-6 col-lg-4 discounted-price n-price-fs nopadding">Rs.
