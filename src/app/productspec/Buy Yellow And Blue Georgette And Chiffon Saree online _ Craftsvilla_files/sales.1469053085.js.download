@@ -1,0 +1,36 @@
+// on search and category page
+var ww = $(window).width();
+var product_data_container = document.getElementById('product_data');
+function InsertProducts()
+{	
+	InsertProducts2();
+	payload = {'windowwidth': ww,'adSalesObject':adSalesObject};
+	$.ajax({
+		url: '/sales/insertProducts.php',
+		//url: 'http://www.craftsvilla.com/sales/insertProducts.php'
+		type: 'POST',
+		data: JSON.stringify(payload),
+		success: function(data) {
+			//alert("Yo");
+			$(product_data_container).prepend(data);
+		}
+	});
+}
+
+function InsertProducts2()
+{
+	//alert("Yo");
+	var products = document.getElementsByClassName('sales');
+	$('.sales').remove();
+	
+}
+
+if (product_data_container) {
+	InsertProducts();	
+	$("body").bind('insertProducts', InsertProducts)
+	$( "#sortorder" ).bind( "change", InsertProducts2);
+	$( "#main" ).on("click",".paginate", InsertProducts2);
+	$( "#main" ).on("click",".searchpaginate", InsertProducts2);
+	$("#mobilesortby li").bind('click',InsertProducts2);
+	//$("#sortby-reset").bind('click',InsertProducts2);
+}

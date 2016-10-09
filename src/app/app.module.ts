@@ -11,6 +11,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 import {JsonpModule} from '@angular/http';
 
 import {ProductService} from './services/products.service';
+import { ProductspecComponent } from './productspec/productspec.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {ProductService} from './services/products.service';
     ChocolateComponent,
     MainContainer,
     ProductlistComponent,
-    ProductdetailsComponent
+    ProductdetailsComponent,
+    ProductspecComponent
 
   ],
   imports: [

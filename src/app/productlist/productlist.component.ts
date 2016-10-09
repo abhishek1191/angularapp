@@ -7,6 +7,8 @@ import {ProductService} from '../services/products.service';
   selector: 'app-productlist',
   templateUrl: './productlist.component.html',
   styleUrls: ['./Template_Craftsvilla.min.css',
+    './productlist.component.css',
+    '../styles/custom.css',
   './Best and Latest Offers on Sarees Online _ Best Deals, Discounts on Sarees at Craftsvilla_files/jquery.fancybox.css',
     './Best and Latest Offers on Sarees Online _ Best Deals, Discounts on Sarees at Craftsvilla_files/bootstrap.min.css',
   './Best and Latest Offers on Sarees Online _ Best Deals, Discounts on Sarees at Craftsvilla_files/custom.1459830600.min.css']
